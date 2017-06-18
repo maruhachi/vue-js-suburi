@@ -3,11 +3,49 @@
 <head>
   <title>hello, html</title>
   <meta charset="utf-8">
+  <style type="text/css" >
+          div { padding: 15px} 
+  </style>
 </head>
 <body>
+  <h3>はじめに</h3>
   <div id="app">
     {{ message }}
   </div>
+  <div id="app-2">
+    <span v-bind:title="message">
+      Hover your mouse over me for a few seconds
+      to see my dinamically bound title!
+    </span>
+  </div>
+  <hr>
+
+  <h3>条件分岐とループ</h3>
+  <div id="app-3">
+    <p v-if="seen">Now you see me</p>
+  </div>
+  <div id="app-4">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+
+  <hr>
+  <h3>ユーザー入力の制御</h3>
+  <div id="app-5">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">Reverse Message</button>
+  </div>
+  <div id="app-6">
+    <p>{{ message }}</p>
+    <input v-model="message">
+  </div>
+
+  <hr>
+  <h3>コンポーネントによる構成</h3>
+
 <script src="https://unpkg.com/vue"></script>
 <script src="./js/index.js" ></script>
 </body>
