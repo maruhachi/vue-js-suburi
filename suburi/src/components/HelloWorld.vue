@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <myheader></myheader>
+    <myheader />
     <img src="../assets/logo.png">
     <div>
       <h1 v-if="msg.length > 0">{{ msg }}</h1>
@@ -9,6 +9,7 @@
 
       <button @click="clear()">clear button</button>
     </div>
+    <router-link to="/members">Goto member page.</router-link>
   </div>
 </template>
 
