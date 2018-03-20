@@ -2,6 +2,16 @@
 
 > vuejs suburi project
 
+## Reference site
+
+### for Suburi
+* [Vuejsをはじめてみる](https://qiita.com/567000/items/dde495d6a8ad1c25fa43)
+* [Vue-routerに触れてみる](https://qiita.com/567000/items/d6a7c694a370dc92e774)
+
+### 環境整備
+* [VSCodeにはGitLogをきれいに見る機能がない](https://terakoya.site/dev/visual-studio-code-recommend-plugin/#Git_History)
+* [IntelliJならJSもやれる](https://pleiades.io/help/idea/vue-js.html)
+
 ## Build Setup
 
 ``` bash
