@@ -1,8 +1,10 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 v-if="msg.length > 0">{{ msg }}</h1>
+    <h1 v-else> no text </h1>
     <input type="text" v-model="msg" />
 
+    <button @click="clear()">clear button</button>
   </div>
 </template>
 
@@ -13,6 +15,11 @@ export default {
     return {
       msg: "Welcome to Your Vue.js App"
     };
+  },
+  methods: {
+    clear() {
+      this.msg = "";
+    }
   }
 };
 </script>
